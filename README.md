@@ -1,3 +1,7 @@
+# reserve-a-table function for the Little Lemon website
+
+This is a project to create a reserve-a-table for the Little Lemon website using React.
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
