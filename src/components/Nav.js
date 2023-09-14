@@ -1,7 +1,7 @@
 // Nav.js
 
 import React from 'react';
-import logo from "./images/Logo.svg"
+import logo from "../images/Logo.svg"
 
 function Nav() {
   return (
@@ -9,6 +9,12 @@ function Nav() {
         <a href="/">
             <img src={logo} alt="logo" />
         </a>
+
+        <div>
+          <div className='bar'></div>
+          <div className='bar'></div>
+          <div className='bar'></div>
+        </div>
     </nav>
   );
 }
