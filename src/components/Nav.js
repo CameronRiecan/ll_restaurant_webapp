@@ -1,6 +1,5 @@
 // Nav.js
 
-import React from 'react';
 import React, { useState } from "react";
 import logo from "../images/Logo.svg"
 
@@ -12,7 +11,7 @@ function Nav() {
   }
 
   return (
-    <nav>
+    <nav className='navbar'>
         <a href="/">
             <img src={logo} alt="logo" />
         </a>
