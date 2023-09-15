@@ -4,6 +4,9 @@ import React, { useState } from 'react';
 
 function BookingForm() {
     const [date, setDate] = useState("");
+    const [times, setTimes] = useState("");
+    const [guests, setGuests] = useState("");
+    const [occasion, setOccasion] = useState("");
 
     const handleSubmit = (e) => {
         e.preventDefault();
