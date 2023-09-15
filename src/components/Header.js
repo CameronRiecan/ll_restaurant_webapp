@@ -18,8 +18,8 @@ function Header() {
         </div>
 
         {/* banner image */}
-        <div>
-          <img src={bannerImg} alt='' />
+        <div className='banner-img'>
+          <img src={bannerImg} alt='Restaurant Food' />
         </div>
       </section>
     </header>
