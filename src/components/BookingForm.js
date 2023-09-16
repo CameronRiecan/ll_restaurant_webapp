@@ -55,6 +55,12 @@ function BookingForm() {
                             <option>Other</option>
                         </select>
                     </div>
+
+                    {/* submit button */}
+
+                    <div className='btnReceive'>
+                        <input aria-label='Submit' type='submit' value={"Make Your Reservation"} />
+                    </div>
                 </fieldset>
             </form>
         </section>
