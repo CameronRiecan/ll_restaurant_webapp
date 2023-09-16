@@ -1,11 +1,14 @@
 // Main.js
 
 import React from 'react';
+import { Route, Routes } from 'react-router-dom';
 
 function Main() {
   return (
     <main>
-      {/* main content goes here */}
+      <Routes>
+        <Route></Route>
+      </Routes>
     </main>
   );
 }
