@@ -8,7 +8,6 @@ function Header() {
   return (
     <header className='header'>
       <section>
-        
         {/* banner texts */}
         <div className='banner'>
           <h2>Little Lemon</h2>

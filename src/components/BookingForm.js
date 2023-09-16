@@ -32,6 +32,18 @@ function BookingForm() {
                     {/* time selection */}
                     <div>
                         <label htmlFor='book-time'>Choose Time:</label>
+                        <select id='book-time' value={times} onChange={(e) => setTimes(e.target.value)}>
+                            <option value=''>Select a Time</option>
+                            {
+                                props.availableTimes.availableTimes.map(availableTimes => {return <option key={availableTimes}>{availableTimes}</option>})
+                            }
+                        </select>
+                    </div>
+
+                    {/* number of guests */}
+                    <div>
+                        <label htmlFor='book-guests'>Number of Guests:</label>
+                        <input id='book-guests' min={1} value={guests} onChange={(e) => setGuests(e.target.value)} />
                     </div>
                 </fieldset>
             </form>
