@@ -65,7 +65,6 @@ nav ul li a:hover{
   transition: all 0.3s ease-in-out;
 }
 
-
 /* header section */
 
 .header {
@@ -78,7 +77,6 @@ color: #EDEFEE;
 padding: 10px 13%;
 position: relative;
 }
-
 
 h2 {
   color: #F4CE14;
@@ -121,7 +119,6 @@ button {
   border-radius: 20px;
 }
 
-
 form, .comfirm{
   padding: 10px 13%;
 }
@@ -153,10 +150,14 @@ input, label{
 
 }
 
+.confirm {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 .comfirm span{
   color: blue;
 }
-
 
 /* menu items */
 
@@ -201,7 +202,6 @@ input, label{
   padding: 5px 15px;
 }
 
-
 .menu-content .heading{
   display: flex;
   justify-content: space-between;
@@ -243,7 +243,6 @@ footer ul li{
   padding: 8px 0;
 }
 
-
 @media screen and (max-width: 768px){
   .menu-icon {
     display: block;
@@ -280,7 +279,6 @@ footer ul li{
   form, .comfirm{
     padding: 10px 8%;
   }
-
 
   .header section, .menu-container{
     padding: 10px 8%;
