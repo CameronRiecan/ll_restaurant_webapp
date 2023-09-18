@@ -132,6 +132,7 @@ input, label{
   margin-right: 20px;
   margin-bottom: 20px;
 }
+
 #book-date, #book-time, #book-guests, #book-occasion{
   background: #bdbdbd43;
   padding: 8px 24px;
