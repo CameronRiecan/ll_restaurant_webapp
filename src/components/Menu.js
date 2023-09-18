@@ -12,16 +12,17 @@ function Menu() {
       </div>
 
       {/* menu cards */}
-      <div>
+      <div className='cards'>
         {
-            recipes.map(recipe => <div key={recipe.id}>
+            recipes.map(recipe => <div key={recipe.id} className='menu-items'>
                 <img src={recipe.image} alt='' />
-                <div>
-                    <div>
+                <div className='menu-content'>
+                    <div className='heading'>
                         <h5>{recipe.title}</h5>
                         <p>{recipe.price}</p>
                     </div>
                     <p>{recipe.description}</p>
+                    <button className='orderbtn'>Order Now!</button>
                 </div>
             </div>)
         }

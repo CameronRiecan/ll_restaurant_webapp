@@ -91,7 +91,7 @@ h3 {
   font-size: 20px;
   max-width: 520px;
   line-height: 1.5;
-  margin-bottom: 30px;
+  margin-bottom: 30px auto;
 }
 
 button {
@@ -106,7 +106,7 @@ button {
   cursor: pointer;
 }
 
-.banner-img{
+.banner-img {
   position: absolute;
   right: 13%;
   top: 15%;
@@ -244,6 +244,19 @@ footer ul li{
   padding: 8px 0;
 }
 
+/* CSS for smaller screens (e.g., mobile devices) */
+@media screen and (max-width: 1250px) {
+  .banner p {
+      max-width: 300px;
+  }
+}
+
+@media screen and (max-width: 920px) {
+  .banner p {
+      max-width: 200px;
+  }
+}
+
 @media screen and (max-width: 768px){
   .menu-icon {
     display: block;
@@ -271,6 +284,13 @@ footer ul li{
 
   .bar{
     background: #333333;
+  }
+
+  .banner p {
+    font-size: 20px;
+    max-width: 520px;
+    line-height: 1.5;
+    margin-bottom: 30px auto;
   }
 
   .banner-img{

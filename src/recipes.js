@@ -5,7 +5,7 @@ const recipes = [
       price: 12.99,
       image: "https://i.ibb.co/68c9bLv/greek-salad.jpg",
       description:
-        "The famous greek salad of crispy lettuce, peppers, olives and our Chicago style fota cheese, garnished with crunchy garlic and rosemary croutons",
+        "The famous greek salad of crispy lettuce, peppers, olives and our Chicago style feta cheese, garnished with crunchy garlic and rosemary croutons",
     },
     {
       id: 2,
@@ -19,7 +19,7 @@ const recipes = [
       id: 3,
       title: "Lemon Dessert",
       price: 4.78,
-      image: "https://i.ibb.co/sm6MfcH/desert.jpg",
+      image: "https://i.ibb.co/sm6MfcH/dessert.jpg",
       description:
         "This comes straight from grandma's recipe book, every last ingredient has been sourced and is as authentic as can be imagined.",
     },
