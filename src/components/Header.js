@@ -7,7 +7,7 @@ import bannerImg from '../images/restaurantfood.jpg';
 function Header() {
   return (
     <header className='header'>
-      <section>
+      <section className='container'>
         {/* banner texts */}
         <div className='banner'>
           <h2>Little Lemon</h2>
