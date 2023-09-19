@@ -16,6 +16,10 @@ function BookingForm(props) {
         props.dispatch(e);
     }
 
+    const handleOccasionChange = (e) => {
+        setOccasion(e.target.value);
+      };
+
     return (
         <header>
             <section>
@@ -52,8 +56,8 @@ function BookingForm(props) {
                         {/* occasion field */}
                         <div>
                             <label htmlFor='book-occasion'>Occasion:</label>
-                            <select id='book-occasion' key={occasion} value={occasion} onChange={(e) => setOccasion(e.target.value)}>
-                                <option value=''>Choose an Occasion</option>
+                            <select id='book-occasion' key={occasion} value={occasion} onChange={handleOccasionChange} required>
+                                <option disabled value=''>Choose an Occasion</option>
                                 <option value='Birthday'>Birthday</option>
                                 <option value='Anniversary'>Anniversary</option>
                                 <option value='Other'>Other</option>
