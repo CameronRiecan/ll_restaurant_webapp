@@ -53,9 +53,11 @@ function BookingForm(props) {
                         <div>
                             <label htmlFor='book-occasion'>Occasion:</label>
                             <select id='book-occasion' key={occasion} value={occasion} onChange={(e) => setOccasion(e.target.value)}>
-                                <option>Birthday</option>
-                                <option>Anniversary</option>
-                                <option>Other</option>
+                                <option value=''>Choose an Occasion</option>
+                                <option value='Birthday'>Birthday</option>
+                                <option value='Anniversary'>Anniversary</option>
+                                <option value='Other'>Other</option>
+                                <option value='None'>None</option>
                             </select>
                         </div>
 
