@@ -20,6 +20,9 @@ function BookingForm(props) {
         setOccasion(e.target.value);
       };
 
+    // Check if all required fields have values
+    const isFormValid = date && times && guests && occasion;
+
     return (
         <header>
             <section>
@@ -66,8 +69,8 @@ function BookingForm(props) {
                         </div>
 
                         {/* submit button */}
-                        <div className='btnReceive'>
-                            <input aria-label='Submit' type='submit' value={"Make Your Reservation"} />
+                        <div className={isFormValid ? 'enabled-button' : 'btnReceive'}>
+                            <input aria-label='Submit' type='submit' value={"Make Your Reservation"} disabled={!isFormValid} />
                         </div>
                     </fieldset>
                 </form>

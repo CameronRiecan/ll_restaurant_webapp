@@ -152,14 +152,23 @@ input, label{
   border-radius: 2px;
 }
 
-.btnReceive input{
+.btnReceive input {
   padding: 12px 16px;
   margin-top: 20px;
   background: #495e57;
-  color: #fff;
+  color: #ddd;
   border: none;
   border-radius: 4px;
 
+}
+
+.enabled-button input {
+  padding: 12px 16px;
+  margin-top: 20px;
+  background-color: #F4CE14; /* Yellow background color */
+  color: black; /* Black text color */
+  border: none;
+  border-radius: 4px;
 }
 
 .confirm {
