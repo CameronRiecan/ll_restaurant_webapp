@@ -48,6 +48,7 @@ function BookingForm(props) {
                         <div>
                             <label htmlFor='book-guests'>Number of Guests:</label>
                             <select id='book-guests' value={guests} onChange={(e) => setGuests(e.target.value)}>
+                            <option value=''>Select a Number</option>
                                 {[...Array(8).keys()].map((num) => (
                                     <option key={num + 1} value={num + 1}>
                                         {num + 1}
@@ -69,7 +70,7 @@ function BookingForm(props) {
                         </div>
 
                         {/* submit button */}
-                        <div className={isFormValid ? 'enabled-button' : 'btnReceive'}>
+                        <div className='btnReceive' className={isFormValid ? 'enabled-button' : 'btnReceive'}>
                             <input aria-label='Submit' type='submit' value={"Make Your Reservation"} disabled={!isFormValid} />
                         </div>
                     </fieldset>
