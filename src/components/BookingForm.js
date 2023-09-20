@@ -87,7 +87,7 @@ function BookingForm(props) {
                         </div>
 
                         {/* submit button */}
-                        <div className='btnReceive' className={isFormValid ? 'enabled-button' : 'btnReceive'}>
+                        <div className={isFormValid ? 'enabled-button' : 'btnReceive'}>
                             <input aria-label='Submit Booking' type='submit' value={"Make Your Reservation"} disabled={!isFormValid} />
                         </div>
                     </fieldset>
