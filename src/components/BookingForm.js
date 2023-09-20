@@ -1,6 +1,14 @@
 import React, { useState } from 'react';
 
 function BookingForm(props) {
+
+    // work around for javascript to make dates conform to US standard to get right date
+    const today = new Date();
+    const year = today.getFullYear();
+    const month = String(today.getMonth() + 1).padStart(2, '0'); // Add 1 because months are zero-based
+    const day = String(today.getDate()).padStart(2, '0');
+
+    const currentDate = `${year}-${month}-${day}`;
     const [date, setDate] = useState("");
     const [times, setTimes] = useState("");
     const [guests, setGuests] = useState("");
@@ -38,6 +46,7 @@ function BookingForm(props) {
                                 required
                                 aria-required='true'
                                 aria-invalid={!date} //Use this is you want to indicate an error state when date is empty
+                                min={currentDate} // Set the minimum date to the current date
                             />
                         </div>
 
