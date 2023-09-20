@@ -30,7 +30,15 @@ function BookingForm(props) {
                     <fieldset>
                         <div>
                             <label htmlFor='book-date'>Choose Date:</label>
-                            <input id='book-date' value={date} onChange={(e) => handleChange(e.target.value)} type='date' required />
+                            <input
+                                id='book-date'
+                                value={date}
+                                onChange={(e) => handleChange(e.target.value)}
+                                type='date'
+                                required
+                                aria-required='true'
+                                aria-invalid={!date} //Use this is you want to indicate an error state when date is empty
+                            />
                         </div>
 
                         {/* time selection */}
@@ -71,7 +79,7 @@ function BookingForm(props) {
 
                         {/* submit button */}
                         <div className='btnReceive' className={isFormValid ? 'enabled-button' : 'btnReceive'}>
-                            <input aria-label='Submit' type='submit' value={"Make Your Reservation"} disabled={!isFormValid} />
+                            <input aria-label='Submit Booking' type='submit' value={"Make Your Reservation"} disabled={!isFormValid} />
                         </div>
                     </fieldset>
                 </form>
